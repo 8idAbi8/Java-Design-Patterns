@@ -1,4 +1,7 @@
-package designPatterns.adapter.enumerationIterator;
+package designPatterns.adapter.enumerationIterator.adapters;
+
+import designPatterns.adapter.enumerationIterator.interfaces.Enumeration;
+import designPatterns.adapter.enumerationIterator.interfaces.Iterator;
 
 /*
  * Adapting an Enumeration to an Iterator.

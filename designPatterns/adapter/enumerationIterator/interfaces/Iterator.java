@@ -1,4 +1,4 @@
-package designPatterns.adapter.enumerationIterator;
+package designPatterns.adapter.enumerationIterator.interfaces;
 
 public interface Iterator<T> {
 	

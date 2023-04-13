@@ -1,6 +1,8 @@
-package designPatterns.adapter.enumerationIterator;
+package designPatterns.adapter.enumerationIterator.concreteClasses;
 
 import java.util.List;
+
+import designPatterns.adapter.enumerationIterator.interfaces.Enumeration;
 
 public class ConcreteEnumeration<T> implements Enumeration {
 

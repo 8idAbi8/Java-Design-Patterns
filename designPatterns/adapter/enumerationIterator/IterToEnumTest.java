@@ -1,6 +1,11 @@
 package designPatterns.adapter.enumerationIterator;
 
 import java.util.ArrayList;
+
+import designPatterns.adapter.enumerationIterator.adapters.IteratorToEnumerationAdapter;
+import designPatterns.adapter.enumerationIterator.concreteClasses.ConcreteIterator;
+import designPatterns.adapter.enumerationIterator.interfaces.Iterator;
+
 import java.util.*;
 /*
  * Test of IteratorToEnumeration Adapter
