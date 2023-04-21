@@ -1,8 +1,8 @@
-package designPatterns.factory.factoryMethod.productClasses.pizzaStyle_concreteProducts.ChicagoStylePizza;
+package designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza;
 
 import designPatterns.factory.factoryMethod.productClasses.abstractProduct.Pizza;
 
-public class ChicagoStyleClamPizza extends Pizza {
+public class NYStylePepperoniPizza extends Pizza {
 
 	@Override
 	public void prepare() {

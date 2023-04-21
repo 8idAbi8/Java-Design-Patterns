@@ -1,27 +1,29 @@
 package designPatterns.factory.factoryMethod.productClasses.abstractProduct;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+
+import designPatterns.factory.factoryMethod.ingredientFamily.Cheese;
+import designPatterns.factory.factoryMethod.ingredientFamily.Clams;
+import designPatterns.factory.factoryMethod.ingredientFamily.Dough;
+import designPatterns.factory.factoryMethod.ingredientFamily.Pepperoni;
+import designPatterns.factory.factoryMethod.ingredientFamily.Sauce;
+import designPatterns.factory.factoryMethod.ingredientFamily.Veggies;
 
 // all the concrete pizzas will derive from this class
 public abstract class Pizza {
 
 	//	Each Pizza has a name, a type of dough, a type of sauce, and a set of toppings.
 	protected String name;
-	protected String dough;
-	protected String sauce;
-	protected ArrayList<String> toppings = new ArrayList<>();
+	protected Dough dough;
+	protected Sauce sauce;
+	protected Veggies veggies[];
+	protected Cheese cheese;
+	protected Pepperoni pepperoni;
+	protected Clams clam;
 
-
-	public void prepare() {
-		System.out.println("--- Preparing " + name + " ---");
-		System.out.println("Tossing dough..." + dough);
-		System.out.println("Adding sauce..." + sauce);
-		System.out.println("Adding toppings: ");
-		
-		for (int i = 0; i < toppings.size(); i++) {
-			System.out.println(" " + toppings.get(i));
-		}
-	}
+	/* This is where we are going to collect the ingredients needed 
+	 * for the pizza, which will come from the ingredient factory.*/
+	public abstract void prepare();
 
 	public void bake() {
 		System.out.println("Bake for 15 minutes at 350");
@@ -38,5 +40,17 @@ public abstract class Pizza {
 	public String getName() {
 		return name;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Pizza [name=" + name + ", dough=" + dough + ", sauce=" + sauce + ", veggies=" + Arrays.toString(veggies)
+				+ ", cheese=" + cheese + ", pepperoni=" + pepperoni + ", clam=" + clam + "]";
+	}
 	
+	
+
 }

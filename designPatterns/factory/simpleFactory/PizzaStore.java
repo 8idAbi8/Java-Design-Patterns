@@ -14,13 +14,14 @@ public class PizzaStore {
 		
 		Pizza pizza;
 		
-//		orderPizza() method uses the factory to create its pizzas by simply passing on the type of the order
+//		orderPizza() method uses the simplefactory to create its pizzas by simply passing on the type of the order
 		pizza = factory.createPizza(type);
 		
 		pizza.prepare();
 		pizza.bake();
 		pizza.cut();
 		pizza.box();
+		
 		return pizza;
 	}
 }

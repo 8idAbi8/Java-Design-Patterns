@@ -1,4 +1,4 @@
-package designPatterns.factory.factoryMethod.creatorClasses.superClass_abstractCreator;
+package designPatterns.factory.factoryMethod.creatorClasses.abstractCreator;
 
 import designPatterns.factory.factoryMethod.productClasses.abstractProduct.Pizza;
 

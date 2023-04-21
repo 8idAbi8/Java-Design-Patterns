@@ -1,4 +1,4 @@
-package designPatterns.factory.factoryMethod.productClasses.pizzaStyle_concreteProducts.ChicagoStylePizza;
+package designPatterns.factory.factoryMethod.productClasses.concreteProducts.ChicagoStylePizza;
 
 import designPatterns.factory.factoryMethod.productClasses.abstractProduct.Pizza;
 
