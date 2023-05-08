@@ -7,10 +7,7 @@ import designPatterns.factory.factoryMethod.productClasses.concreteProducts.Chee
 import designPatterns.factory.factoryMethod.productClasses.concreteProducts.ClamPizza;
 import designPatterns.factory.factoryMethod.productClasses.concreteProducts.PepperoniPizza;
 import designPatterns.factory.factoryMethod.productClasses.concreteProducts.VeggiePizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.ChicagoStylePizza.ChicagoStyleCheesePizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.ChicagoStylePizza.ChicagoStyleClamPizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.ChicagoStylePizza.ChicagoStylePepperoniPizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.ChicagoStylePizza.ChicagoStyleVeggiePizza;
+
 
 public class ChicagoStylePizzaStore extends PizzaStore {
 
@@ -19,16 +16,17 @@ public class ChicagoStylePizzaStore extends PizzaStore {
 	protected Pizza createPizza(String item) {
 		
 		Pizza pizza = null;
+		
 		ChicagoPizzaIngredientFactory chicagoPizzaIngredientFactory =
 				new ChicagoPizzaIngredientFactory();
 		
 		if (item.equals("cheese")) {
 			pizza = new CheesePizza(chicagoPizzaIngredientFactory);
-			pizza.setName("Chicago style cheese pizza");
+			pizza.setName("Chicago Style Cheese Pizza");
 			
 		} else if (item.equals("veggie")) {
 			pizza = new VeggiePizza(chicagoPizzaIngredientFactory);
-			pizza.setName("Chicago style veggie pizza");
+			pizza.setName("Chicago Style Veggie Pizza");
 			
 		} else if (item.equals("clam")) {
 			pizza = new ClamPizza(chicagoPizzaIngredientFactory);
@@ -36,7 +34,7 @@ public class ChicagoStylePizzaStore extends PizzaStore {
 			
 		} else if (item.equals("pepperoni")) {
 			pizza = new PepperoniPizza(chicagoPizzaIngredientFactory);
-			pizza.setName("Chicago style pepperoni pizza");
+			pizza.setName("Chicago Style Pepperoni Pizza");
 			
 		} 
 		

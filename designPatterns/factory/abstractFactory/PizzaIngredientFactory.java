@@ -7,12 +7,9 @@ import designPatterns.factory.factoryMethod.ingredientFamily.Pepperoni;
 import designPatterns.factory.factoryMethod.ingredientFamily.Sauce;
 import designPatterns.factory.factoryMethod.ingredientFamily.Veggies;
 
-/* Abstract Factory:
- * So how are you going to ensure each franchise is using quality ingredients? 
- * You’re going to build a factory that produces them and ships them to your franchises!
+/* The Abstract Factory Pattern provides an interface for creating 
+ * families of related or dependent objects without specifying their concrete classes.
  * 
- * Defining an interface for the factory that is going to 
- * create all our ingredients:
  * */
 public interface PizzaIngredientFactory {
 

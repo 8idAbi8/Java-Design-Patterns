@@ -1,0 +1,18 @@
+Il codice rappresenta un'implementazione del pattern Singleton in Java. 
+Il pattern Singleton viene utilizzato per garantire che una sola istanza di una classe sia presente in 
+un'applicazione e che essa possa essere facilmente accessibile da tutte le parti dell'applicazione.
+
+Nella classe Singleton, il costruttore è privato, il che significa che non è possibile creare un'istanza 
+di Singleton al di fuori della classe stessa. 
+Inoltre, la classe dispone di un metodo statico getInstance() che restituisce l'unica istanza di 
+Singleton presente nell'applicazione.
+
+Il metodo getInstance() utilizza la variabile instance per tenere traccia dell'unica istanza di Singleton. 
+Se instance è null, il metodo crea un nuovo oggetto Singleton e lo assegna alla variabile instance. 
+In questo modo, l'unica istanza di Singleton viene creata solo quando necessario, ovvero la prima volta 
+che il metodo getInstance() viene invocato.
+
+La sezione di codice synchronized (Singleton.class) {...} viene utilizzata per garantire che l'accesso 
+alla variabile instance sia sincronizzato. Ciò significa che solo un thread alla volta può accedere 
+al blocco di codice all'interno del blocco synchronized. Questo evita il problema delle race condition, 
+che si verifica quando due o più thread cercano di accedere alla stessa risorsa contemporaneamente.
