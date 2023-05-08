@@ -13,8 +13,6 @@ public class TestDrive {
 		new Thread(() -> {
 			Singleton s2 = Singleton.getInstance();
 			System.out.println("thread2: " + s2);
-		}).start();
-
-		
+		}).start();		
 	}
 }
