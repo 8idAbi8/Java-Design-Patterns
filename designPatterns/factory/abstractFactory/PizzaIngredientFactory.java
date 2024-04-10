@@ -7,12 +7,11 @@ import designPatterns.factory.factoryMethod.ingredientFamily.Pepperoni;
 import designPatterns.factory.factoryMethod.ingredientFamily.Sauce;
 import designPatterns.factory.factoryMethod.ingredientFamily.Veggies;
 
-/* The Abstract Factory Pattern provides an interface for creating 
- * families of related or dependent objects without specifying their concrete classes.
- * 
+/* The Abstract Factory Pattern provides an interface 
+ * for creating families of related or dependent objects 
+ * without specifying their concrete classes. * 
  * */
 public interface PizzaIngredientFactory {
-
 	public Dough createDough();
 	public Sauce createSauce();
 	public Cheese createCheese();

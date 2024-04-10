@@ -68,6 +68,4 @@ public class WeatherData implements Subject {
 //
 //	}
 
-	
-
 }

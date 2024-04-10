@@ -18,20 +18,15 @@ public class RenameCommand implements Command {
 
 	@Override
 	public void execute() {
-
 		oldFileName = target.getFilname();
-
-		target.setFilname(newFileName);
-		
+		target.setFilname(newFileName);		
 	}
 
 	@Override
 	public void undo() {
-
 		if (oldFileName == null)
 			throw new IllegalStateException("oldFileName == null");
 
 		target.setFilname(oldFileName);
 	}
-
 }

@@ -1,10 +1,6 @@
 package designPatterns.factory.simpleFactory;
 
 import designPatterns.factory.factoryMethod.productClasses.abstractProduct.Pizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza.NYStyleCheesePizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza.NYStyleClamPizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza.NYStylePepperoniPizza;
-import designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza.NYStyleVeggiePizza;
 
 /*
  * The Simple Factory isn’t actually a Design Pattern; it’s more of a programming idiom.
@@ -30,7 +26,4 @@ public class SimplePizzaFactory {
 		 */
 		return null;
 	}
-
-	
-
 }

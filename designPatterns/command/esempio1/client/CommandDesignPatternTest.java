@@ -7,9 +7,9 @@ public class CommandDesignPatternTest {
 
 	public static void main(String[] args) {
 		
-		/*Il tipo di dati "var" è stato introdotto in Java a partire dalla versione 10. 
-		 * È un tipo di dato implicito, il cui valore viene determinato dal compilatore 
-		 * in base al contesto in cui viene utilizzato.*/
+   /* Il tipo di dati "var" è stato introdotto in Java a partire dalla versione 10. 
+	* È un tipo di dato implicito, il cui valore viene determinato dal compilatore 
+	* in base al contesto in cui viene utilizzato.*/
 		
 		// filname, dim;
 		var f = new TextFile("file1.txt", 1234);

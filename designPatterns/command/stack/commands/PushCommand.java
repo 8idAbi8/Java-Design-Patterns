@@ -1,7 +1,5 @@
 package designPatterns.command.stack.commands;
 
-import java.util.List;
-
 import designPatterns.command.stack.reciver.Stack;
 
 public class PushCommand implements Command {

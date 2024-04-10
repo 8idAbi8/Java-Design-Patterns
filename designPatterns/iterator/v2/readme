@@ -1,0 +1,19 @@
+In questo esempio, viene mostrata un'implementazione semplice del design pattern Iterator. 
+La classe CollectionImpl rappresenta una collezione generica che implementa l'interfaccia Collection. 
+La collezione tiene traccia degli elementi in un array e offre un metodo 
+createIterator() per creare un'istanza dell'iteratore specifico per quella collezione.
+
+L'iteratore specifico per MyCollection è implementato come una classe interna privata 
+MyIterator che implementa l'interfaccia Iterator. 
+L'iteratore tiene traccia dell'indice corrente mentre itera attraverso gli elementi 
+dell'array elements.
+
+Nella classe Main, viene creato un'istanza di MyCollection e vengono aggiunti alcuni elementi. 
+Successivamente, viene creato un iteratore invocando il metodo createIterator() sulla collezione. 
+Il ciclo while itera attraverso gli elementi chiamando hasNext() per verificare se ci sono 
+altri elementi e next() per ottenere l'elemento successivo.
+
+L'utilizzo del design pattern Iterator consente di separare l'iterazione 
+dalla struttura della collezione sottostante, 
+consentendo un'iterazione uniforme su diverse collezioni senza la necessità di 
+conoscere la loro implementazione specifica.

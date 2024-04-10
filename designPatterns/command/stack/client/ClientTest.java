@@ -9,7 +9,7 @@ import designPatterns.command.stack.reciver.SimpleStack;
 import designPatterns.command.stack.reciver.Stack;
 
 public class ClientTest {
-/**/
+	
 	public static void main(String[] args) {
 
 		// invoker
@@ -49,7 +49,5 @@ public class ClientTest {
 		// Stampa lo stack
 		System.out.println(stack);
 	}
-
-
 }
 

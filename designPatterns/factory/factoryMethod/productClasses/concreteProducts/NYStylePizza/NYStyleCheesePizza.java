@@ -1,6 +1,5 @@
 package designPatterns.factory.factoryMethod.productClasses.concreteProducts.NYStylePizza;
 
-import designPatterns.factory.factoryMethod.ingredientFamily.ingredients.ReggianoCheese;
 import designPatterns.factory.factoryMethod.productClasses.abstractProduct.Pizza;
 
 public class NYStyleCheesePizza extends Pizza {

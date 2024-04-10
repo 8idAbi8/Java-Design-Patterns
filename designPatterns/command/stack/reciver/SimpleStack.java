@@ -1,14 +1,8 @@
 package designPatterns.command.stack.reciver;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
-import java.util.List;
 
-import designPatterns.command.stack.commands.noCommand;
-import designPatterns.command.stack.commands.Command;
-import designPatterns.command.stack.commands.PopCommand;
-import designPatterns.command.stack.commands.PushCommand;
 import designPatterns.command.stack.exception.EmptyStackException;
 
 public class SimpleStack implements Stack {

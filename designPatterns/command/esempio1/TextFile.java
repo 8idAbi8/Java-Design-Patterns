@@ -5,8 +5,7 @@ public class TextFile {
 	private String filname;
 	private int size;
 
-	public TextFile(String filname, int size) {
-		
+	public TextFile(String filname, int size) {		
 		if(filname == null || filname.length() <= 0)
 			throw new IllegalArgumentException("filname == null || filname.length() <= 0");
 		
@@ -17,7 +16,6 @@ public class TextFile {
 		this.size = size;
 	}
 
-	
 	// getter and setter
 	public String getFilname() {
 		return filname;
@@ -34,12 +32,10 @@ public class TextFile {
 	public void setSize(int size) {
 		this.size = size;
 	}
-	
-	
+		
 	@Override
 	public String toString() {
 		return "TextFile [filname = " + filname + ", size = " + size + "]";
 	}
-	
 	
 }

@@ -5,7 +5,6 @@ import designPatterns.command.stack.commands.PushCommand;
 import designPatterns.command.stack.exception.EmptyStackException;
 import designPatterns.command.stack.invoker.StackCommandInvoker;
 import designPatterns.command.stack.reciver.SempliceStack;
-import designPatterns.command.stack.reciver.SimpleStack;
 import designPatterns.command.stack.reciver.Stack;
 
 public class Main {
@@ -33,8 +32,7 @@ public class Main {
 		
 		// rimuovo un elemento dallo stack
 		try {
-			//Object popped = stack.pop();
-			
+			//Object popped = stack.pop();			
 			
 			// nel momento in cui si crea l'oggetto commando Pop, si fa anche la pop() sullo stack
 			// percui l'execute() è gia stata fatta, e il metodo executeCommand non fa niente
@@ -59,9 +57,7 @@ public class Main {
 			invoker.executeCommand(popCommand = new PopCommand(stack));  
 			System.out.println("Elemento rimosso: " + popCommand.value);
 		} catch (EmptyStackException e) {
-			System.out.println("Lo stack è vuoto!");
+			System.err.println("Lo stack è vuoto!");
 		}
-
 	}
-
 }
