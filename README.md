@@ -1,1 +1,1 @@
-# Design-Patterns in Java
+# Head First Design-Patterns, in Java
